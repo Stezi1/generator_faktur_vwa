@@ -4,14 +4,15 @@
   --text: #1f2937;
   --muted: #6b7280;
   --border: #d1d5db;
-  --accent: #2563eb;
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --accent: #71acce;
+  font-family: 'Manrope', system-ui, sans-serif;
   color: var(--text);
   background: var(--bg);
 }
 
 * { box-sizing: border-box; }
 body { margin: 0; }
+h1, h2 { font-family: 'Space Grotesk', system-ui, sans-serif; }
 
 .app-header {
   background: var(--accent);
