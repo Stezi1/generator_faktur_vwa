@@ -1,4 +1,21 @@
+import { useState } from 'react'
+import InvoiceHeader from './components/InvoiceHeader.jsx'
+
+// yyyy-mm-dd pro <input type="date">, posunuté o `days` dní
+const isoDate = (days = 0) => {
+  const d = new Date()
+  d.setDate(d.getDate() + days)
+  return d.toLocaleDateString('sv-SE')
+}
+
 export default function App() {
+  const [header, setHeader] = useState({
+    type: 'Faktura',
+    number: `${new Date().getFullYear()}001`,
+    issued: isoDate(),
+    due: isoDate(14),
+  })
+
   return (
     <>
       <header className="app-header">
@@ -7,9 +24,7 @@ export default function App() {
 
       <main className="layout">
         <section>
-          <div className="card">
-            <h2>Formulář</h2>
-          </div>
+          <InvoiceHeader data={header} onChange={setHeader} />
         </section>
 
         <section className="card preview">
