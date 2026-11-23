@@ -35,7 +35,7 @@ export default function App() {
 
         <section className="card preview">
           <h2>Náhled faktury</h2>
-          <p>Náhled bude doplněn ve 2. sprintu.</p>
+          <p></p>
         </section>
       </main>
     </>
