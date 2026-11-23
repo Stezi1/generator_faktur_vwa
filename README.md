@@ -1,16 +1,30 @@
-# React + Vite
+# Generátor faktur
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Jednoduchá React aplikace pro vytvoření faktury (seminář Vývoj webových aplikací, SCRUM).
 
-Currently, two official plugins are available:
+## Požadavky
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Node.js](https://nodejs.org/) verze 20 nebo novější
 
-## React Compiler
+## Spuštění
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/Stezi1/generator_faktur_vwa.git
+cd generator_faktur_vwa
+npm install
+npm run dev
+```
 
-## Expanding the Oxlint configuration
+Aplikace poběží na http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Build
+
+```bash
+npm run build
+```
+
+Výsledek je ve složce `dist/`.
+
+## Dokumentace
+
+Product backlog a plán sprintů: [docs/SCRUM.md](docs/SCRUM.md)
